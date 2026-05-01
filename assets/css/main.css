@@ -682,7 +682,7 @@ header #menu-btn:hover{
 
 .portfolio-item{
     border-radius: 0.5rem;
-    height: 25rem;
+    height: 35rem;
     overflow: hidden;
     position: relative;
 }
@@ -748,6 +748,38 @@ header #menu-btn:hover{
             transition: all 0.4s linear;
 }
 
+.portfolio-item .content p.desc{
+    font-size: 1.4rem;
+    padding: 1rem 2rem 0;
+    text-align: center;
+    color: var(--grey);
+}
+
+.portfolio-item .content .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    transform-origin: top;
+    -webkit-transform: translateY(-10rem);
+            transform: translateY(-10rem);
+    opacity: 0;
+    -webkit-transition: all 0.4s linear;
+       -moz-transition: all 0.4s linear;
+         -o-transition: all 0.4s linear;
+            transition: all 0.4s linear;
+}
+
+.portfolio-item .content .tags-container .tag {
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color: var(--purple);
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+    text-transform: capitalize;
+}
+
 .portfolio-item .content .view-btn{
     font-size: 2rem;
     color: var(--purple);
@@ -761,6 +793,18 @@ header #menu-btn:hover{
             transition: all 0.4s linear;
     border-radius: 5rem;
     margin-top: 1.5rem;
+}
+
+.portfolio-item .content .explore-btn {
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+    border: 0.2rem solid var(--purple);
+    text-transform: capitalize;
+}
+
+.portfolio-item .content .explore-btn:hover {
+    background-color: var(--purple);
+    color: var(--white);
 }
 
 .portfolio-item:hover .content{
@@ -780,7 +824,19 @@ header #menu-btn:hover{
     opacity: 1;
 }
 
+.portfolio-item:hover .content .tags-container{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+}
+
 .portfolio-item:hover .content .view-btn{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio-item:hover .content .explore-btn{
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;

@@ -59,6 +59,9 @@
         padding: 2rem;
     }
 
+    .qr-btn {
+        display: none !important;
+    }
 }
 
 @media (max-width: 450px){
